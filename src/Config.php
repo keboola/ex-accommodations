@@ -8,9 +8,24 @@ use Keboola\Component\Config\BaseConfig;
 
 class Config extends BaseConfig
 {
-    // @todo implement your custom getters
-    public function getFoo(): string
+
+    public function getHost(): string
     {
-        return $this->getValue(['parameters', 'foo']);
+        return $this->getValue(['parameters', 'host']);
     }
+
+	public function getKey(): string
+	{
+		return $this->getValue(['parameters', 'key']);
+	}
+
+	public function getCountry(): string
+	{
+		return $this->getValue(['parameters', 'country']);
+	}
+
+	public function getTransport(): string
+	{
+		return $this->getValue(['parameters', 'transport']);
+	}
 }
