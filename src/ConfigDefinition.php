@@ -14,13 +14,13 @@ class ConfigDefinition extends BaseConfigDefinition
         $parametersNode = parent::getParametersDefinition();
         // @formatter:off
         /** @noinspection NullPointerExceptionInspection */
-	    $parametersNode
-		    ->children()
-		    ->scalarNode('host')->isRequired()->cannotBeEmpty()->end()
-		    ->scalarNode('key')->isRequired()->cannotBeEmpty()->end()
-		    ->scalarNode('country')->isRequired()->cannotBeEmpty()->end()
-		    ->scalarNode('transport')->cannotBeEmpty()->end()
-		    ->end();
+        $parametersNode
+            ->children()
+            ->scalarNode('host')->isRequired()->cannotBeEmpty()->end()
+            ->scalarNode('key')->isRequired()->cannotBeEmpty()->end()
+            ->scalarNode('country')->isRequired()->cannotBeEmpty()->end()
+            ->scalarNode('transport')->cannotBeEmpty()->end()
+            ->end();
 
         // @formatter:on
         return $parametersNode;
